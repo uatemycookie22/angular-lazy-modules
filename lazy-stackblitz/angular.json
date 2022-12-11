@@ -56,10 +56,12 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+            "hmr": true,
             "browserTarget": "demo:build"
           },
           "configurations": {
             "production": {
+              "hmr": true,
               "browserTarget": "demo:build:production"
             }
           }
